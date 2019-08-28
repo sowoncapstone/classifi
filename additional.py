@@ -38,7 +38,6 @@ if not os.path.isdir(dataDir):
     os.remove("waiting/{}/waiting.pickle".format(userID))
     os.remove("image/{}/new.pickle".format(userID))
     os.remove("image/{}/png/{}.jpg".format(userID, userID))
-    print(criteria)
 
 else:
     fr = open("data/{}/criteria.pickle".format(userID), "rb")
@@ -64,4 +63,3 @@ else:
     os.remove("waiting/{}/waiting.pickle".format(userID))
     os.remove("image/{}/new.pickle".format(userID))
     os.remove("image/{}/png/{}.jpg".format(userID, userID))
-    print(criteria)
