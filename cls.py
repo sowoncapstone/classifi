@@ -59,7 +59,6 @@ for (i, imagePath) in enumerate(imagePaths):
 		knownNames.append(name)
 
 data = {"encodings": knownEncodings, "names": knownNames}
-print(data)
 f = open("image/{}/new.pickle".format(userID), "wb")
 f.write(pickle.dumps(data))
 f.close()
